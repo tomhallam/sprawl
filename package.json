@@ -34,6 +34,7 @@
     ]
   },
   "dependencies": {
+    "aws-sdk": "^2.524.0",
     "bunyan": "^1.8.12"
   }
 }
