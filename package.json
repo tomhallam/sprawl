@@ -2,9 +2,11 @@
   "name": "sprawl",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx babel src --watch --out-dir dist",
+    "test": "npx jest",
+    "build": "npx babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/tomhallam/sprawl/issues"
   },
-  "homepage": "https://github.com/tomhallam/sprawl#readme"
+  "homepage": "https://github.com/tomhallam/sprawl#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "dist/"
+    ]
+  }
 }
