@@ -32,5 +32,8 @@
     "modulePathIgnorePatterns": [
       "dist/"
     ]
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12"
   }
 }
